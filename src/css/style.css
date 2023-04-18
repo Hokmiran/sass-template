@@ -5,11 +5,11 @@
 }
 
 .portfolio {
-  width: 100%;
-  height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  height: 100vh;
   position: relative;
   width: 100%;
   background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg");
@@ -25,7 +25,7 @@
   position: relative;
 }
 
-.portfolioText, .introText {
+.portfolioText, .portfolioWelcomeText, .introText {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 5.5rem;
   color: #212529;
@@ -114,6 +114,45 @@
 }
 .offerButton:hover {
   background-color: #4d5154;
+}
+
+.portfolioWelcome {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg");
+  height: 80vh;
+  height: 100%;
+}
+
+.portfolioWelcomeText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  max-width: 30rem;
+}
+
+.map {
+  height: 30rem;
+}
+
+.map iframe {
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  border: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

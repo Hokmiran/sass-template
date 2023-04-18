@@ -70,3 +70,31 @@
         background-color: #4d5154;
     }
 }
+
+.portfolioWelcome {
+    @include portfolio;
+    background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg");
+    height: 80vh;
+    height: 100%
+}
+
+.portfolioWelcomeText {
+    @include structure;
+    @extend .portfolioText;
+    @include bg-image;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    max-width: 30rem;
+}
+
+.map {
+    height: 30rem;
+}
+
+.map iframe {
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
