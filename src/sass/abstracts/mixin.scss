@@ -19,6 +19,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 @mixin flex-center {
@@ -37,6 +38,7 @@
     border-color: $button-div-bg-color;
     border-radius: 6px;
     border: none;
+    margin-top: 20px;
 }
 @mixin hamburger {
     width: 50px;
