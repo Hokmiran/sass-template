@@ -1,0 +1,37 @@
+.portfolio {
+    @include portfolio;
+    background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg");
+}
+
+.main-section {
+    @include structure;
+    height: 100vh;
+    position: relative;
+}
+
+.portfolioText {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 5.5rem;
+}
+
+.portfolioParag {
+    font-size: 1.75rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.findOut {
+    @include downloadButton;
+    margin-top: 20px;
+}
+.hamburger {
+    position: fixed;
+    z-index: 1;
+    top: 15px;
+    right: 15px;
+    @include hamburger;
+    svg {
+        color: #fff;
+        width: 30%;
+    }
+}
