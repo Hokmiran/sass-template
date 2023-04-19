@@ -274,3 +274,8 @@
         margin: 0 20px;
     }
 }
+
+.copy {
+    @include flex-center;
+    @include text;
+}
