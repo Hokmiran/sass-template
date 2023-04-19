@@ -4,6 +4,12 @@
     background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg");
 }
 
+.main-sectionMob {
+    @include structure;
+    height: 100vh;
+    position: relative;
+}
+
 .main-section {
     @include structure;
     height: 100vh;
@@ -146,7 +152,6 @@
 .portfolioWelcome {
     @include portfolio;
     background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg");
-    height: 80vh;
     height: 100%
 }
 
@@ -159,6 +164,85 @@
     font-size: 3.5rem;
 }
 
+.blogs {
+    margin-bottom: 100px;
+}
+
+.image {
+    @include flex-center;
+    padding: 0 150px;
+    height: 60vh;
+    cursor: pointer;
+
+    & .image1 {
+        width: 50%;
+        background-image: url('https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-1.jpg');
+        @include bg-image;
+
+        &:hover {
+            transform: scale(0.9);
+            transition: 800ms ease-in-out;
+            opacity: 0.6;
+            background-color: red;
+        }
+    }
+
+    & .image2 {
+        width: 50%;
+        background-image: url('https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-2.jpg');
+        @include bg-image;
+
+        &:hover {
+            transform: scale(0.9);
+            transition: 800ms ease-in-out;
+            opacity: 0.6;
+            background-color: red;
+        }
+    }
+
+    & .image3 {
+        width: 50%;
+        background-image: url('https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-3.jpg');
+        @include bg-image;
+
+        &:hover {
+            transform: scale(0.9);
+            transition: 800ms ease-in-out;
+            opacity: 0.6;
+            background-color: red;
+        }
+    }
+
+    & .image4 {
+        width: 50%;
+        background-image: url('https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-4.jpg');
+        @include bg-image;
+
+        &:hover {
+            transform: scale(0.9);
+            transition: 800ms ease-in-out;
+            opacity: 0.6;
+            background-color: red;
+        }
+    }
+}
+
+.click {
+    @extend .offerButton;
+    background-color: $second-base-text-color;
+    color: $base-text-color;
+    margin: 0 15px;
+}
+
+.buttons {
+    margin: 20px;
+}
+
+.look {
+    @extend .offerButton;
+    margin: 0 15px;
+}
+
 .map {
     height: 30rem;
 }
@@ -168,4 +252,25 @@
     height: 100%;
     width: 100%;
     border: 0;
+}
+
+.footer {
+    @include flex-center;
+    height: 40vh;
+}
+
+.main-social {
+    @include flex-center;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.social {
+    @include social-links;
+    @include flex-center;
+
+    & div {
+        color: $second-base-text-color;
+        margin: 0 20px;
+    }
 }

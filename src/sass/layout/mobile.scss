@@ -1,0 +1,168 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .introText {
+        font-size: 1.5rem;
+    }
+
+    .image {
+        padding: 0 90px;
+    }
+
+    .portfoliOfferText {
+        font-size: 2rem;
+    }
+
+    .main-social {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .portfolioText {
+        font-size: 4rem;
+    }
+
+    .introText {
+        font-size: 1rem;
+    }
+
+    .introParag {
+        font-size: 1rem;
+        margin: 0 20px;
+    }
+
+    .portfolioOffer {
+        height: 100vh;
+    }
+
+    .icons {
+        @include structure;
+
+        &_content {
+            &-iconsItems {
+                @include icons-items-mobile;
+                @include flex-center;
+
+                & div {
+                    font-size: 1.5rem;
+                }
+            }
+
+            & p {
+                @include text;
+                font-size: 1rem;
+            }
+
+            & span {
+                font-size: .8rem;
+                margin: 5px 0;
+            }
+        }
+    }
+
+    .portfoliOfferText {
+        font-size: 1.5rem;
+    }
+
+    .image {
+        padding: 0 70px;
+        height: 50vh;
+    }
+
+    .portfolioRecent {
+        height: 50vh;
+    }
+
+    .main-social {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio {
+        height: 50vh;
+    }
+
+    .main-sectionMob {
+        height: 100%;
+    }
+
+    .main-section {
+        height: 50vh;
+    }
+
+    .portfolioText {
+        font-size: 2rem;
+    }
+
+    .portfolioParag {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    .introText {
+        text-align: center;
+        font-size: 1rem;
+        margin: 10px;
+    }
+
+    .introParag {
+        font-size: 1rem;
+        margin: 0 20px;
+    }
+
+    .portfolioOffer {
+        height: 100vh;
+    }
+
+    .icons {
+        @include structure;
+
+        &_content {
+
+            &-iconsItems {
+                @include icons-items-mobile;
+                width: 3rem;
+                height: 3rem;
+
+                & div {
+                    font-size: 1.5rem;
+                }
+            }
+
+            & p {
+                @include text;
+                font-size: 1rem;
+            }
+
+            & span {
+                font-size: .8rem;
+                margin: 5px 0;
+            }
+        }
+    }
+
+    .portfoliOfferText {
+        font-size: 1.5rem;
+    }
+
+    .image {
+        padding: 0 10px;
+        height: 30vh;
+    }
+
+    .portfolioRecent {
+        height: 50vh;
+    }
+
+    .main-social {
+        width: 80%;
+    }
+
+    .buttons {
+        @include structure;
+
+        & button {
+            margin: 10px 0;
+        }
+    }
+}

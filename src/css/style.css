@@ -20,6 +20,16 @@
   background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg");
 }
 
+.main-sectionMob {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
 .main-section {
   display: flex;
   align-items: center;
@@ -103,7 +113,7 @@
   font-weight: 300;
 }
 
-.offerButton {
+.offerButton, .look, .click {
   background-color: #1D809F;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #fff;
@@ -117,7 +127,7 @@
   background-color: #212529;
   color: #fff;
 }
-.offerButton:hover {
+.offerButton:hover, .look:hover, .click:hover {
   background-color: #4d5154;
 }
 
@@ -218,7 +228,6 @@
   position: relative;
   width: 100%;
   background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg");
-  height: 80vh;
   height: 100%;
 }
 
@@ -239,6 +248,89 @@
   font-size: 3.5rem;
 }
 
+.blogs {
+  margin-bottom: 100px;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 150px;
+  height: 60vh;
+  cursor: pointer;
+}
+.image .image1 {
+  width: 50%;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image .image1:hover {
+  transform: scale(0.9);
+  transition: 800ms ease-in-out;
+  opacity: 0.6;
+  background-color: red;
+}
+.image .image2 {
+  width: 50%;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image .image2:hover {
+  transform: scale(0.9);
+  transition: 800ms ease-in-out;
+  opacity: 0.6;
+  background-color: red;
+}
+.image .image3 {
+  width: 50%;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image .image3:hover {
+  transform: scale(0.9);
+  transition: 800ms ease-in-out;
+  opacity: 0.6;
+  background-color: red;
+}
+.image .image4 {
+  width: 50%;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-4.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.image .image4:hover {
+  transform: scale(0.9);
+  transition: 800ms ease-in-out;
+  opacity: 0.6;
+  background-color: red;
+}
+
+.click {
+  background-color: #fff;
+  color: #212529;
+  margin: 0 15px;
+}
+
+.buttons {
+  margin: 20px;
+}
+
+.look {
+  margin: 0 15px;
+}
+
 .map {
   height: 30rem;
 }
@@ -248,6 +340,202 @@
   height: 100%;
   width: 100%;
   border: 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+.main-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  justify-content: space-around;
+}
+
+.social {
+  height: 4rem;
+  width: 4rem;
+  background-color: #1D809F;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social div {
+  color: #fff;
+  margin: 0 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .introText {
+    font-size: 1.5rem;
+  }
+  .image {
+    padding: 0 90px;
+  }
+  .portfoliOfferText, .portfolioRecent h2 {
+    font-size: 2rem;
+  }
+  .main-social {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .portfolioText, .introText, .portfolioWelcomeText {
+    font-size: 4rem;
+  }
+  .introText {
+    font-size: 1rem;
+  }
+  .introParag {
+    font-size: 1rem;
+    margin: 0 20px;
+  }
+  .portfolioOffer, .portfolioRecent {
+    height: 100vh;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .icons_content-iconsItems {
+    background-color: #fff;
+    height: 7rem;
+    width: 7rem;
+    display: block;
+    line-height: 7.5rem;
+    font-size: 2.25rem;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icons_content-iconsItems div {
+    font-size: 1.5rem;
+  }
+  .icons_content p {
+    font-weight: 700;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+  }
+  .icons_content span {
+    font-size: 0.8rem;
+    margin: 5px 0;
+  }
+  .portfoliOfferText, .portfolioRecent h2 {
+    font-size: 1.5rem;
+  }
+  .image {
+    padding: 0 70px;
+    height: 50vh;
+  }
+  .portfolioRecent {
+    height: 50vh;
+  }
+  .main-social {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .portfolio {
+    height: 50vh;
+  }
+  .main-sectionMob {
+    height: 100%;
+  }
+  .main-section {
+    height: 50vh;
+  }
+  .portfolioText, .introText, .portfolioWelcomeText {
+    font-size: 2rem;
+  }
+  .portfolioParag, .introParag {
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+  .introText {
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+  }
+  .introParag {
+    font-size: 1rem;
+    margin: 0 20px;
+  }
+  .portfolioOffer, .portfolioRecent {
+    height: 100vh;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .icons_content-iconsItems {
+    background-color: #fff;
+    height: 7rem;
+    width: 7rem;
+    display: block;
+    line-height: 7.5rem;
+    font-size: 2.25rem;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .icons_content-iconsItems div {
+    font-size: 1.5rem;
+  }
+  .icons_content p {
+    font-weight: 700;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+  }
+  .icons_content span {
+    font-size: 0.8rem;
+    margin: 5px 0;
+  }
+  .portfoliOfferText, .portfolioRecent h2 {
+    font-size: 1.5rem;
+  }
+  .image {
+    padding: 0 10px;
+    height: 30vh;
+  }
+  .portfolioRecent {
+    height: 50vh;
+  }
+  .main-social {
+    width: 80%;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .buttons button {
+    margin: 10px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
